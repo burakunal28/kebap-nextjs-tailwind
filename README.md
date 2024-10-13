@@ -6,10 +6,6 @@ This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and B
 
 The project is deployed on Vercel and can be viewed at: [https://kebap-nextjs-tailwind.vercel.app/](https://kebap-nextjs-tailwind.vercel.app/)
 
-## Developer
-
-This project is developed by Burak Ünal. You can find more of his work on his GitHub profile: [https://github.com/burakunal28](https://github.com/burakunal28)
-
 ## Getting Started
 
 First, install the dependencies:
@@ -44,3 +40,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 This project is deployed using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Developer 👨‍💻
+
+Created by [Burak Ünal](https://burakunal28.vercel.app/)
