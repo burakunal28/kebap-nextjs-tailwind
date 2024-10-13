@@ -2,6 +2,10 @@
 
 This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and Bun, bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Preview
+
+![Preview](screenshot.png)
+
 ## Live Demo
 
 The project is deployed on Vercel and can be viewed at: [https://kebap-nextjs-tailwind.vercel.app/](https://kebap-nextjs-tailwind.vercel.app/)
