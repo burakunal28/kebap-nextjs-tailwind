@@ -1,101 +1,185 @@
-import Image from "next/image";
+'use client'
+
+import { 
+ArrowRightIcon,
+} from "@heroicons/react/24/solid";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Hero Section */}
+      <div className="w-9/12 mx-auto">
+        <div className="relative isolate">
+        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-40">
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl font-bold text-shadow">
+              <span className="text-neutral-800">Innovative Solutions for</span>
+              <br />
+              <span className="text-teal-600">Tomorrow's Challenges</span>
+            </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <p className="mt-6 text-lg sm:text-xl leading-8 text-gray-600 text-shadow-sm">
+              We're shaping the future of technology with cutting-edge solutions and innovative products.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8 sm:mt-10">
+              <button type="button" className="w-full sm:w-auto px-6 py-3 text-lg font-medium rounded-xl bg-teal-600 text-white shadow-lg hover:bg-teal-700 transition">
+                Learn More
+              </button>
+              <button type="button" className="w-full sm:w-auto px-6 py-3 text-lg font-medium rounded-xl bg-white text-neutral-600 ring-1 ring-neutral-300 shadow-lg hover:bg-gray-50 transition">
+                Contact Us
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      {/* Products Section */}
+      <section>
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-semibold text-center mb-8 sm:mb-12 text-gray-800">Our Innovative Products</h2>
+          <div className="grid sm:grid-cols-2 gap-8">
+            {/* Product 1 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div className="p-6">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-800">NexusFlow</h3>
+                  <span className="inline-flex items-center rounded-full bg-teal-100 px-3 py-0.5 text-sm font-medium text-teal-800">
+                    New
+                  </span>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  NexusFlow revolutionizes data management with its quantum-powered neural network and holographic user interface.
+                </p>
+                <ul className="text-sm text-gray-600 mb-6">
+                  <li className="flex items-center mb-2">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Quantum-enhanced processing
+                  </li>
+                  <li className="flex items-center mb-2">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Holographic interface
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Telepathic data transfer
+                  </li>
+                </ul>
+                <Link href="/products" as="/products" className="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+                  Learn More
+                  <ArrowRightIcon className="ml-2 -mr-1 h-4 w-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Product 2 */}
+            <div className="rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+              <div className="p-6">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-800">CyberSphere</h3>
+                  <span className="inline-flex items-center rounded-full bg-teal-100 px-3 py-0.5 text-sm font-medium text-teal-800">
+                    Popular
+                  </span>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  CyberSphere creates an immersive digital ecosystem powered by AI and augmented reality for next-gen collaboration.
+                </p>
+                <ul className="text-sm text-gray-600 mb-6">
+                  <li className="flex items-center mb-2">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Neural-link compatibility
+                  </li>
+                  <li className="flex items-center mb-2">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Quantum encryption
+                  </li>
+                  <li className="flex items-center">
+                    <svg className="w-4 h-4 mr-2 text-teal-500" fill="currentColor" viewBox="0 0 20 20">
+                      <title>Check Icon</title>
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    Time-bending support
+                  </li>
+                </ul>
+                <Link href="/products" as="/products" className="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
+                  Learn More
+                  <ArrowRightIcon className="ml-2 -mr-1 h-4 w-4" aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-semibold text-center mb-8 sm:mb-12 text-gray-800">Technologies We Use</h2>
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+            {['React', 'Node.js', 'Python', 'AWS', 'Docker', 'Kubernetes', 'TensorFlow', 'GraphQL'].map((tech) => (
+              <span key={tech} className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-teal-100 text-teal-800 mb-2">
+                {tech}
+              </span>
+            ))}
+          </div>
+          <div className="mt-8 space-y-6 text-gray-600">
+            <p className="text-center leading-relaxed">
+              These cutting-edge technologies empower us to craft scalable, efficient, and innovative solutions tailored to our clients' diverse needs. By harnessing the latest advancements in software development, we deliver robust and adaptable products that thrive in the ever-evolving tech landscape.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-teal-600 mb-2">Frontend Excellence</h3>
+                <p>Our mastery of React allows us to create dynamic, responsive user interfaces that provide seamless user experiences across devices.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-teal-600 mb-2">Backend Power</h3>
+                <p>With Node.js, we ensure robust server-side operations, enabling fast, scalable, and efficient backend solutions for our applications.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-teal-600 mb-2">Cloud & DevOps</h3>
+                <p>Leveraging AWS, Docker, and Kubernetes, we guarantee secure, scalable applications with smooth deployment and efficient orchestration.</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg font-semibold text-teal-600 mb-2">AI Integration</h3>
+                <p>By incorporating TensorFlow, we infuse our solutions with intelligent features, pushing the boundaries of what's possible in software development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
     </div>
+
+          {/* Call to Action */}
+          <section className="py-16 sm:py-20 bg-teal-600">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
+          <p className="text-lg sm:text-xl text-white mb-8">Let's discuss how our innovative solutions can help you stay ahead of the competition.</p>
+          <Link href="/contact" as="/contact" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-teal-600 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-600 focus:ring-white">
+            Get in Touch
+            <ArrowRightIcon className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
+
+    </>
   );
 }
