@@ -103,7 +103,7 @@ const Footer = () => {
 						</Link>
 					</div>
 					<div className="flex-col justify-start items-start gap-2 inline-flex md:w-full w-4/12">
-						<Link href="/careers" className="sm:text-base md:text-sm font-semibold">Contact</Link>
+						<Link href="/contact" className="sm:text-base md:text-sm font-semibold">Contact</Link>
 						<div className="text-neutral-500 sm:text-base md:text-sm flex items-center w-max">
 							<span>Open Positions</span>
 						</div>
