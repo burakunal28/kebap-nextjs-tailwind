@@ -1,17 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kebap Tech - Innovative Solutions for Tomorrow's Challenges
+
+This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and Bun, bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Live Demo
+
+The project is deployed on Vercel and can be viewed at: [https://kebap-nextjs-tailwind.vercel.app/](https://kebap-nextjs-tailwind.vercel.app/)
+
+## Developer
+
+This project is developed by Burak Ünal. You can find more of his work on his GitHub profile: [https://github.com/burakunal28](https://github.com/burakunal28)
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+```
+
+Then, run the development server:
+
+```bash
+bun start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -31,6 +41,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is deployed using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
