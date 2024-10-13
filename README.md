@@ -44,3 +44,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Developer 👨‍💻
 
 Created by [Burak Ünal](https://burakunal28.vercel.app/)
+<<<<<<< HEAD
+=======
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+>>>>>>> 6042adcbb65899bae0c63b13f6cbe8e9b28d4dbe
