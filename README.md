@@ -1,6 +1,6 @@
 # Kebap Tech - Next.js Tailwind CSS App
 
-This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and Bun, bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and Bun.
 
 ## Preview
 
