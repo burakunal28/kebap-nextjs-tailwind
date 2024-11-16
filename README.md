@@ -1,4 +1,4 @@
-# Kebap Tech - Next.js Tailwind CSS App
+# Kebap Tech - Next.js Tailwind CSS Website
 
 This is a [Next.js](https://nextjs.org) project using Tailwind CSS, Biome, and Bun.
 
