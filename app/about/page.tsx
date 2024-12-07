@@ -17,7 +17,7 @@ export default function About() {
             { label: "Years of Innovation", value: "15+" },
             { label: "Team Members", value: "100+" },
           ].map((item) => (
-            <div key={item.label} className="bg-white shadow-md rounded-lg p-6 transition-all duration-300 hover:shadow-lg">
+            <div key={item.label} className="bg-white shadow-md rounded-xl p-6 transition-all duration-300 hover:shadow-lg">
               <div className="text-3xl font-semibold text-teal-600 mb-2">{item.value}</div>
               <div className="text-sm text-gray-600">{item.label}</div>
             </div>

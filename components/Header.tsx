@@ -98,8 +98,7 @@ const DesktopHeader = () => {
     ];
 
     return (
-        <nav className="hidden md:flex w-full justify-center bg-white ring-1 ring-gray-300 py-3 xitems-center shadow-3xl">
-            <div className="w-9/12 justify-between flex items-center">
+        <nav className="hidden w-9/12 mx-auto mt-5 rounded-xl md:flex justify-between bg-white ring-1 ring-gray-300 px-6 py-3 xitems-center shadow-xl">
                 <div>
                     <a href="/" title="Home" className="text-xl font-semibold text-teal-600">
                         Kebap Tech
@@ -124,13 +123,12 @@ const DesktopHeader = () => {
                     </ul>
                 </div>
                 <div className="flex justify-end">
-                    <button type="button" className="inline-flex h-7 text-base items-center justify-center rounded-xl bg-neutral-800 font-medium text-neutral-50 shadow-neutral-500/20 transition hover:bg-teal-500 active:scale-95 px-3">
+                    <button type="button" className="inline-flex h-7 text-base items-center justify-center rounded-xl font-medium text-neutral-50 shadow-neutral-500/20 bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition active:scale-95 px-3">
                         <span>
                             en
                         </span>
                     </button>
                 </div>
-            </div>
         </nav>
     );
 }

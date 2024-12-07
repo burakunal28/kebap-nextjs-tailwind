@@ -10,13 +10,11 @@ export default function Services() {
         </header>
       </div>
 
-      <div className="w-9/12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
+      <div className="w-9/12 grid grid-cols-2 md:grid-cols-4 gap-6">
         {[
           { title: "Web Development", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
           { title: "Mobile Apps", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
           { title: "Cloud Solutions", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
-          { title: "AI & Machine Learning", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
-          { title: "IoT Development", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
           { title: "Cybersecurity", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
           { title: "Data Analytics", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },
           { title: "DevOps", color: "text-teal-600", bgColor: "bg-gradient-to-br from-teal-50 to-white" },

@@ -42,21 +42,9 @@ export default function Contact() {
       <div className="w-9/12 bg-white ring-1 ring-gray-300 rounded-xl">
         <div className="p-6">
           <article className="text-justify text-lg text-gray-600">
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600">
               We'd love to hear from you! Whether you have a question about our services, need support, or just want to say hello, don't hesitate to reach out.
-            </p>  
-            <div className="mt-4">
-              <h3 className="font-semibold text-lg mb-2">
-                How Can We Help?
-              </h3>
-              <ul className="list-disc list-inside text-gray-600">
-                <li>General inquiries</li>
-                <li>Customer support</li>
-                <li>Partnership opportunities</li>
-                <li>Career information</li>
-                <li>Feedback and suggestions</li>
-              </ul>
-            </div>
+            </p>
           </article>
         </div>
       </div>
@@ -78,12 +66,10 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="w-9/12 p-6 bg-teal-50 ring-1 ring-gray-300 rounded-xl">
-        <header>      
-          <h2 className="text-xl font-semibold text-teal-700 text-center md:text-left">
+      <div className="w-9/12">
+        <button className="w-full inline-flex items-center justify-center px-4 py-4 border border-transparent text-sm font-medium rounded-xl shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition active:scale-95">     
             Send Us a Message
-          </h2>
-        </header>
+        </button>
       </div>
       
     </main>
