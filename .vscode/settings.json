@@ -1,8 +1,8 @@
 {
-    "css.validate": false,
-    "tailwindCSS.includeLanguages": {
-      "plaintext": "javascript"
-    },
-    "IDX.aI.enableInlineCompletion": true,
-    "IDX.aI.enableCodebaseIndexing": true
-  }
+	"css.validate": false,
+	"tailwindCSS.includeLanguages": {
+		"plaintext": "javascript"
+	},
+	"IDX.aI.enableInlineCompletion": true,
+	"IDX.aI.enableCodebaseIndexing": true
+}
