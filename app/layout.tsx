@@ -7,8 +7,8 @@ import Header from "@/components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Kebap Tech",
-	description: "Kebap Tech",
+	title: "Kebap-NextJS-Tailwind",
+	description: "Kebap-NextJS-Tailwind",
 };
 
 export default function RootLayout({
